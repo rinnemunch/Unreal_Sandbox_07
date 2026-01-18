@@ -85,3 +85,42 @@ This pattern establishes a clean foundation for expanding interaction mechanics 
 
 A fully functional physics-based grab and rotate system that allows players to pick up, inspect, and manipulate objects in real time.  
 This project establishes a strong foundation for expanding interaction mechanics such as throwing, snapping, or context-aware object use.
+
+--- 
+
+# Project 3 – Chaos Fracture Interior Material Setup
+
+## 🖼️ Preview
+
+![Project 3](Media/3.gif)
+
+## 🧱 Features
+
+**Chaos Geometry Collection Workflow**
+
+- Static mesh converted into a Geometry Collection using Fracture Mode  
+- Uniform Fracture applied to generate clean, testable fracture pieces  
+- Bone colors disabled for accurate material preview  
+
+**Interior vs Exterior Material Separation**
+
+- Geometry Collection material slots expanded to support multiple materials  
+- Slot 0 reserved for exterior surface material  
+- Slot 1 dedicated to interior fracture faces  
+
+**Interior Material Visualization**
+
+- Custom bright emissive material created for clear interior face visibility  
+- Explode Amount used during setup to preview internal surfaces  
+- Ensures interior faces are visually distinct during fracture testing  
+
+**Material Assignment to Internal Faces**
+
+- Interior bones selected via Fracture Hierarchy  
+- Assign Material utility used with Material Index set to interior slot  
+- Material applied to **Only Internal Faces** for correct separation  
+
+## 🚀 Result
+
+A properly configured Chaos Geometry Collection where fractured interior faces use a dedicated material while exterior surfaces remain unchanged.  
+This setup ensures believable destruction visuals and establishes a reliable workflow for advanced Chaos-based destruction systems in Unreal Engine 5.
