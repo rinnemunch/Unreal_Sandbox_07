@@ -124,3 +124,18 @@ This project establishes a strong foundation for expanding interaction mechanics
 
 A properly configured Chaos Geometry Collection where fractured interior faces use a dedicated material while exterior surfaces remain unchanged.  
 This setup ensures believable destruction visuals and establishes a reliable workflow for advanced Chaos-based destruction systems in Unreal Engine 5.
+
+--- 
+
+# Project 4 – Event-Driven Health and Death System (UI + Gameplay)
+
+## 🖼️ Preview
+
+![Project 4](Media/4.gif)
+
+## 🧱 Features
+
+**Event-Driven Health Architecture**
+
+- Player health managed through a single `UpdateHealth` custom event  
+- Supports both damage and healing via posit
