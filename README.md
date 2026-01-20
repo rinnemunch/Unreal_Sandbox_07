@@ -139,3 +139,54 @@ This setup ensures believable destruction visuals and establishes a reliable wor
 
 - Player health managed through a single `UpdateHealth` custom event  
 - Supports both damage and healing via posit
+
+--- 
+
+# Project 5 – Asset-Free UMG Crosshair System
+
+## 🖼️ Preview
+
+![Project 5](Media/5.gif)
+
+## 🧱 Features
+
+**Procedural UMG Crosshair Design**
+
+- Crosshair built entirely using UMG Border widgets  
+- No textures, materials, or external assets required  
+- Fully resolution-independent and DPI-safe  
+
+**Centered Canvas-Based Layout**
+
+- Canvas Panel used for precise screen-space positioning  
+- Center dot anchored and aligned to screen center  
+- Alignment values ensure consistent behavior across resolutions  
+
+**Rounded Border Styling**
+
+- Border widgets configured with Rounded Box draw mode  
+- Clean, soft visual appearance without image dependencies  
+- Color and opacity easily adjustable per element  
+
+**Modular Crosshair Wings**
+
+- Horizontal wings built as independent Border widgets  
+- Mirrored alignment used for left and right symmetry  
+- Size, spacing, and transparency exposed for quick iteration  
+
+**Begin Play UI Initialization**
+
+- Crosshair widget created on Event Begin Play  
+- Added directly to the viewport without weapon dependency  
+- Reference stored for future dynamic behavior or removal  
+
+**Manual Aim Alignment Support**
+
+- Entire crosshair adjustable via Canvas Slot positioning  
+- Enables visual alignment with projectile spawn direction  
+- Provides a flexible baseline for weapon-specific tuning  
+
+## 🚀 Result
+
+A lightweight, extensible crosshair system built entirely with UMG primitives.  
+This project establishes a clean foundation for debugging, prototyping, or extending into dynamic, weapon-aware crosshair behavior without relying on image assets.
