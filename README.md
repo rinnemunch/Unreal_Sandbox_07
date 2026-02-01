@@ -190,3 +190,45 @@ This setup ensures believable destruction visuals and establishes a reliable wor
 
 A lightweight, extensible crosshair system built entirely with UMG primitives.  
 This project establishes a clean foundation for debugging, prototyping, or extending into dynamic, weapon-aware crosshair behavior without relying on image assets.
+
+--- 
+
+# Project 6 – Chaos Destruction Anchor Fields
+
+## 🖼️ Preview
+
+![Chaos Anchor Fields](Media/6.gif)
+
+## 🧱 Features
+
+**Chaos Destruction Setup**
+
+- Geometry Collection created from a scaled cube mesh
+- Uniform fracture applied to produce clean, readable break patterns
+- Bone color visualization disabled for clearer destruction results
+
+**Projectile-Based Strain Application**
+
+- First Person projectile modified to spawn a Chaos Master Field on impact
+- Strain field spawned at hit location using impact point transform
+- High strain magnitude applied to guarantee fracture for demonstration
+- Field triggered immediately before projectile cleanup
+
+**Anchor Field Stabilization**
+
+- Built-in FS_AnchorField_Generic placed directly in the level
+- Anchor Field scaled and positioned to overlap only part of the Geometry Collection
+- Box, sphere, and plane shapes supported for different constraint behaviors
+- Anchor Field explicitly assigned in the Geometry Collection Initialization Fields array
+
+**Controlled Destruction Behavior**
+
+- Anchored fracture pieces remain fixed after break
+- Unanchored sections respond to gravity and physics forces
+- Prevents full structural collapse while preserving fracture detail
+- Demonstrates how Chaos constraints affect post-fracture motion
+
+## 🚀 Result
+
+Chaos Destruction no longer collapses entire structures by default.  
+Anchor Fields provide predictable, grounded destruction by defining which fracture pieces stay fixed and which are allowed to move, making large environmental assets feel intentional, stable, and physically believa
